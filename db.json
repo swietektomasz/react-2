@@ -1,0 +1,34 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "this app",
+      "author": "me"
+    },
+    {
+      "id": 2,
+      "title": "another post",
+      "author": "me"
+    },
+    {
+      "id": 3,
+      "title": "yet another one",
+      "author": "me"
+    },
+    {
+      "id": 4,
+      "title": "and this",
+      "author": "me"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "me"
+  }
+}

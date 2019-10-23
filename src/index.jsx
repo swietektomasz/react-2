@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import PostList from './components/PostList';
+import ErrorBoundary from './components/ErrorBoundary';
 
 
 function App() {
   return (
     <div>
-      <PostList />
+      <ErrorBoundary>
+        <PostList />
+      </ErrorBoundary>
     </div>
   );
 }

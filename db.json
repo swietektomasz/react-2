@@ -3,21 +3,25 @@
     {
       "id": 1,
       "title": "this app",
+      "content": "A fantastic post about things and such",
       "author": "me"
     },
     {
       "id": 2,
       "title": "another post",
+      "content": "A fantastic post about things and such",
       "author": "me"
     },
     {
       "id": 3,
       "title": "yet another one",
+      "content": "A fantastic post about things and such",
       "author": "me"
     },
     {
       "id": 4,
       "title": "and this",
+      "content": "A fantastic post about things and such",
       "author": "me"
     }
   ],

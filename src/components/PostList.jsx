@@ -3,6 +3,7 @@ import { windowFetch } from '../api';
 import GenericPost from './GenericPost';
 import ColorfulPost from './ColorfulPost';
 import BorderedPost from './BorderedPost';
+import DifferentPostList from './DifferentPostList';
 
 function PostList() {
   const [data, setData] = useState({ posts: [] });
@@ -21,6 +22,12 @@ function PostList() {
       <ColorfulPost post={data.posts[0]} />
       <h2>A post with a border</h2>
       <BorderedPost post={data.posts[0]} />
+      <hr />
+      <DifferentPostList>
+        <ColorfulPost post={data.posts[1]} />
+        <BorderedPost post={data.posts[2]} />
+        <GenericPost post={data.posts[3]} />
+      </DifferentPostList>
     </div>
   );
 }

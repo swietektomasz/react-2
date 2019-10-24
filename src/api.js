@@ -23,6 +23,19 @@ export function chainedFetch() {
   return Axios.get(`${api}/posts`).then((result) => Axios.get(`${api}/posts/${result.data[0].id}`));
 }
 
+chainedFetch();
+
+export function parallelFetch() {
+  return Axios.all([
+    Axios.get(`${api}/posts`),
+    Axios.get(`${api}/posts/1`),
+  ]).then(Axios.spread((posts, post) => {
+    console.log(posts, post);
+  }));
+}
+
+parallelFetch();
+
 const cancelledRequest = () => {
   const { CancelToken } = Axios;
   const source = CancelToken.source();

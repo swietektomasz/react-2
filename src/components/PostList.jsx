@@ -4,6 +4,7 @@ import GenericPost from './GenericPost';
 import ColorfulPost from './ColorfulPost';
 import BorderedPost from './BorderedPost';
 import DifferentPostList from './DifferentPostList';
+import RenderedPost from './RenderedPost';
 
 function PostList() {
   const [data, setData] = useState({ posts: [] });
@@ -28,6 +29,11 @@ function PostList() {
         <BorderedPost post={data.posts[2]} />
         <GenericPost post={data.posts[3]} />
       </DifferentPostList>
+      <hr />
+      <DifferentPostList render={() => (
+        <RenderedPost post={data.posts[0]} />
+      )}
+      />
     </div>
   );
 }
